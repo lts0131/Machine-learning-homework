@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS user_info;
+
+CREATE TABLE user_info (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    user_name TEXT NOT NULL,
+    password TEXT NOT NULL,
+    user_type TEXT NOT NULL,
+    user_nickname TEXT NOT NULL
+);
+
